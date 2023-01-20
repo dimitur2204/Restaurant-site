@@ -4,6 +4,9 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {MdOutlineRestaurantMenu} from 'react-icons/md';
 
 const Navbar = () => {
+    // Виж коментарите по долу и като ги направиш другите работи по компоненти
+    // Всички тия стейтове могат да си идат по компонентите
+    // И няма да имаш currentInput1-8 
     const [toggleMenu, setToggleMenu] = React.useState(false);
     const [toggleLogin, setToggleLogin] = React.useState(false);
     const [toggleBook, setToggleBook] = React.useState(false);
@@ -52,6 +55,9 @@ const Navbar = () => {
                             <li><a href = '#landing' onClick = {() => setToggleMenu(false)}>Landing</a></li>
                         </ul>
                         <ul className = 'navbar__menu-overlay_loginbook'>
+                            // Всяко едно от тия може да е компонент който да прави това setToggleMenu(false)
+                            // И просто на компоонента му даваш props: href (type string), text (type) string
+                            // И ще имаш <NavLink href="#home" text="Home" />
                             <li><a href = '#home' onClick = {() => setToggleMenu(false)}>Home</a></li>
                             <li><a href = '#pages' onClick = {() => setToggleMenu(false)}>Pages</a></li>
                             <li><a href = '#contactus' onClick = {() => setToggleMenu(false)}>Contact Us</a></li>
@@ -63,6 +69,9 @@ const Navbar = () => {
                     </div> 
                 )}               
             </div>
+
+            // Тия модални прозорци loginOverlay, menuOverlay, bookOverlay също требва да са отделни файлове
+// И по същата система им даваш prop: open (type boolean) кога да се отварат и кога не.
             { toggleLogin && (
                 <div className = 'navbar__loginoverlay'>
                     <div className = 'navbar__loginoverlay-login'>
