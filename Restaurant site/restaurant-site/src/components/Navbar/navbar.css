@@ -1,0 +1,328 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #0C0C0C;
+    padding: 1rem 2rem;
+    position: fixed;
+    z-index: 4;
+}
+
+.navbar__heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    margin-left: 5rem;  
+}
+
+.navbar__heading h1 {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__links a {
+    color: #FFFFFF;    
+}
+
+.navbar__links a:hover {
+    color: #545454;
+}
+
+.navbar__links li {
+    margin-right: 2rem;
+    color: #0C0C0C;
+}
+
+.navbar__links li:last-child {
+    margin-right: 0;
+}
+
+.navbar__loginbook {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;    
+    margin-right: 5rem; 
+}
+
+.navbar__loginbook a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.navbar__loginbook a:hover {
+    border-bottom: 1px solid #DCCA87;
+}
+
+.navbar__loginbook-line {
+    margin: 0 2rem;
+    width: 1px;
+    height: 30px;
+    background-color: #545454;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__menu-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0C0B08;
+    transition: 0.5s ease;
+    z-index: 5;
+}
+
+.navbar__menu-overlay_close {
+    font-size: 37px;
+    color: #DCCA87;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar__menu-loginbook {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.navbar__menu-loginbook a {
+    color: #fff;
+}
+
+.navbar__menu-overlay_loginbook {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar__menu-overlay_links {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar__menu-overlay li {
+    color: #DCCA87;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.navbar__menu-overlay li:hover {
+    color: #fff;
+}
+
+.navbar__loginoverlay {
+    background: #0C0B08;
+    border: 1.5px solid rgba(220, 202, 135, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 40vw;
+    min-height: 50vh;
+    z-index: 6;
+    padding: 4rem 6rem;    
+}
+
+.navbar__loginoverlay p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;    
+    letter-spacing: 0.04em;
+    color: red;
+}
+
+.navbar__loginoverlay h2,
+.navbar__bookoverlay h2 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;    
+    color: #DCCA87;
+    margin-bottom: 3rem;
+}
+
+.navbar__loginoverlay input,
+.navbar__bookoverlay input {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #AAAAAA;
+    background: #0C0C0C;
+    box-sizing: border-box;
+    border: 1px solid #F5EFDB;    
+    padding: 1rem 1rem;    
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.navbar__loginoverlay button,
+.navbar__bookoverlay button {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #0C0C0C;
+    background: #DCCA87;
+    border: 1px solid #DCCA87;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.navbar__loginoverlay-login,
+.navbar__loginoverlay-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__loginoverlay-line1 {
+    width: 1px;
+    height: 40vh;
+    background-color: rgba(220, 202, 135, 0.5);
+    margin: 0 4rem;
+}
+
+.navbar__loginoverlay-line2 {
+    display: none;
+    width: 30vw;
+    height: 1px;
+    background-color: rgba(220, 202, 135, 0.5);
+    margin: 3rem 0;
+}
+
+.navbar__overlay-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.navbar__bookoverlay {
+    background: #0C0B08;
+    border: 1.5px solid rgba(220, 202, 135, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 20vw;
+    min-height: 50vh;
+    z-index: 6;
+    padding: 4rem 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar__menu {
+        display: flex;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__loginbook {
+        display: none;
+    }
+
+    .navbar__menu-overlay_loginbook {
+        display: none;
+    }
+
+    .navbar__heading {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar__loginoverlay {
+        flex-direction: column;
+    }
+
+    .navbar__loginoverlay-line1 {
+        display: none;
+    }
+
+    .navbar__loginoverlay-line2 {
+        display: flex;
+    }
+
+    .navbar__loginoverlay h2 {
+        margin-bottom: 2rem;
+    }    
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        padding: 0.5rem 2rem;
+    }
+    .navbar__menu-loginbook {
+        display: none;
+    }
+
+    .navbar__menu-overlay_links {
+        display: none;
+    }
+
+    .navbar__menu-overlay_loginbook {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar__loginoverlay {
+        min-width: 30vw;
+        min-height: 50vh;        
+        padding: 2rem 3rem;
+    }
+
+    .navbar__bookoverlay {                
+        padding: 2rem 3rem;
+    }
+
+    .navbar__loginoverlay-line2 {        
+        width: 50vw;        
+    }
+}

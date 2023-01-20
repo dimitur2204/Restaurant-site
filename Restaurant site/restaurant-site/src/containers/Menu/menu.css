@@ -1,0 +1,141 @@
+.menu {
+    background: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 9rem;
+}
+
+.menu button {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #0C0C0C;
+    background: #DCCA87;
+    padding: 0.3rem 0.9rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.menu__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.menu__heading h3 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.menu__heading h1 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #DCCA87;
+    margin-top: 1rem;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__container img {
+    width: 22%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.menu__container h2 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+}
+
+.menu__container-wines {
+    display: flex;
+    flex-direction: column;    
+}
+
+.menu__container-cocktails {
+    display: flex;
+    flex-direction: column;    
+}
+
+@media screen and (max-width: 1650px) {
+    .menu__container img {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .menu {
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .menu__container img {
+        display: none;
+    }
+
+    .menu__container-wines {
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu__container {
+        flex-direction: column;
+    }
+
+    .menu__container-wines {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .menu__heading h1 {
+        font-size: 54px;
+        line-height: 110%;        
+    }
+
+    .menu__container h2 {
+        font-size: 40px;
+        line-height: 110%;        
+    }
+
+    .menu__container .menuitem__title h5 {
+        font-size: 20px;
+        line-height: 110%;
+    }
+
+    .menu__container .menuitem__title-price p {
+        font-size: 20px;
+        line-height: 110%;
+    }
+}

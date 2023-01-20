@@ -1,0 +1,31 @@
+.laurel {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.laurel img {
+    width: 70%;
+}
+
+.laurel h1 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+    margin-bottom: 0.3rem;
+}
+
+.laurel p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+}

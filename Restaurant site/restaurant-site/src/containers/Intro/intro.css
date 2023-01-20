@@ -1,0 +1,19 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;    
+}
+
+.intro video {
+    width: 100%;
+}
+
+.intro__overlay {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

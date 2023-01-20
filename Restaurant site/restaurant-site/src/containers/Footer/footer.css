@@ -1,0 +1,223 @@
+.footer {
+    background: url('../../assets/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36rem 18rem 6rem 18rem;
+}
+
+.footer__bigscreen {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__smallscreen {
+    display: none;
+}
+
+.footer__copyright {
+    display: none;
+}
+
+.footer p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.footer h3 {
+    font-family: 'Cormorant Upright';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #F5EFDB;  
+    margin-bottom: 1rem;  
+    text-align: center;
+}
+
+.footer__bigscreen-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bigscreen-gericht {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.footer__bigscreen-gericht_icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.footer__gericht-icons_fb {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.footer__gericht-icons_t {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.footer__gericht-icons_i {
+    cursor: pointer;
+}
+
+.footer__bigscreen-gericht h1 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #DCCA87;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.footer__bigscreen-gericht span {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.footer__bigscreen-gericht img {
+    margin-bottom: 0.5rem;
+}
+
+.footer__bigscreen-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__smallscreen-gericht {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.footer__smallscreen-gericht_icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.footer__smallscreen-gericht h1 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #DCCA87;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.footer__smallscreen-gericht span {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.footer__smallscreen-gericht img {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1500px) {
+    .footer {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__smallscreen {
+        display: flex;
+    }
+    
+    .footer__copyright {
+        display: flex;
+        margin-top: 4rem;
+    }
+
+    .footer__bigscreen-gericht {
+        display: none;
+    }
+
+    .footer__bigscreen-hours {
+        margin-left: 5rem;
+    }
+
+    .footer {
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .footer p {        
+        font-size: 14px;
+        line-height: 155%;        
+    }
+    
+    .footer h3 {        
+        font-size: 28px;
+        line-height: 110%;        
+    }
+}
+

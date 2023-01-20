@@ -1,0 +1,66 @@
+.menuitem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.menuitem__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;    
+}
+
+.menuitem__title h5 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+}
+
+.menuitem__title-price {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+}
+
+.menuitem__title-price p {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+
+.menuitem__title-price div {
+    width: 119px;
+    height: 1px;
+    background: #FAFAFA;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.menuitem__tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menuitem__tags p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+    text-align: start;
+}

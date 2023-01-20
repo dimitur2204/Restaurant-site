@@ -1,0 +1,292 @@
+.findus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0C0C0C;
+    padding: 6rem 9rem 6rem 0;
+    position: relative;
+    z-index: 0;
+}
+
+.findus__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20rem;
+}
+
+.findus__newsletter {
+    position: absolute;
+    z-index: -2;
+    top: 92%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;   
+    max-width: 75vw; 
+    backface-visibility: hidden;
+}
+
+.findus__bg img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 94%;
+    width: 78%;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.findus__container-image {
+    margin-left: 15rem;
+}
+
+.findus__container-image img {
+    width: 75%;
+}
+
+.findus__container-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+}
+
+.findus__container-content_heading {
+    margin-bottom: 2rem;
+}
+
+.findus__container-content_heading h3 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.findus__container-content_heading h1 {
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #DCCA87;
+    text-align: start;
+    margin-bottom: 3rem;
+}
+
+.findus__container-content_heading p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+}
+
+.findus__container-content_open h3 {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+    margin-bottom: 1rem;
+}
+
+.findus__container-content_open p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.findus__container-content_open button {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #0C0C0C;
+    background: #DCCA87;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+    .findus__container-image {
+        margin-left: 10rem;
+    }
+
+    .findus__container-image img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .findus__container {
+        padding-left: 10rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .findus__container-content p {
+        font-size: 14px;
+        line-height: 155%;
+    }
+
+    .findus__container-content h3 {
+        font-size: 20px;
+        line-height: 110%;
+    }
+
+    .findus__container-content h1 {
+        font-size: 54px;
+        line-height: 110%;
+    }
+
+    .findus__container-content_open button {        
+        padding: 0.3rem 1.2rem;        
+    }
+
+    .findus__container-image {
+        margin-left: 5rem;
+    }
+
+    .findus__container-image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .findus__container-content {        
+        min-width: 15rem;
+    }
+
+    .findus__container-content p {
+        font-size: 13px;
+        line-height: 135%;
+    }
+
+    .findus__container-content h3 {
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .findus__container-content h1 {
+        font-size: 45px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .findus__container-image {
+        margin-left: 3rem;
+    }
+
+    .findus__container {
+        padding-left: 7rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .findus__container-content {        
+        min-width: 13rem;
+    }
+
+    .findus__container-image img {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .findus__container-content {        
+        min-width: 12rem;
+    }
+
+    .findus__container {
+        padding-left: 5rem;
+    }
+
+    .findus__container-image img {
+        width: 140%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .findus__container {
+        flex-direction: column;
+        padding-left: 7rem;
+    }
+
+    .findus__container-content p {
+        font-size: 16px;
+        line-height: 175%;
+    }
+
+    .findus__container-content h3 {
+        font-size: 23px;
+        line-height: 130%;
+    }
+
+    .findus__container-content h1 {
+        font-size: 64px;
+        line-height: 130%;
+    }
+
+    .findus__container-content_open button {        
+        padding: 0.5rem 2rem;        
+    }
+
+    .findus__container-image {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .findus__container-image img {
+        width: 100%;
+    }
+
+    .findus__container-content {        
+        min-width: 15rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .findus__container {
+        padding-left: 7rem;
+    }
+
+    .findus__container-content p {
+        font-size: 14px;
+        line-height: 155%;
+    }
+
+    .findus__container-content h3 {
+        font-size: 20px;
+        line-height: 110%;
+    }
+
+    .findus__container-content h1 {
+        font-size: 54px;
+        line-height: 110%;
+        margin-bottom: 2rem;
+    }
+
+    .findus__container-content_open button {        
+        padding: 0.3rem 1.2rem;   
+        margin-top: 1rem;     
+    }
+}
